@@ -21,4 +21,22 @@ html {
   hyphens: auto;
 }
 
+@responsive {
+  .row {
+    @apply -mx-3 w-row flex flex-wrap;
+  }
+
+  .row .col {
+    @apply px-3;
+  }
+
+  .row-tight {
+    @apply -mx-1 w-row-tight flex flex-wrap;
+  }
+
+  .row-tight .col {
+    @apply px-1;
+  }
+}
+
 @import '~tailwindcss/utilities';

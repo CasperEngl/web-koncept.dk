@@ -81,14 +81,26 @@ const spacing = {
   '6xl': '72rem',
   '8xl': '96rem',
   '10xl': '120rem',
-};
+}
 
 module.exports = {
   theme: {
-    extend: {},
     container: {
       center: true,
       padding: '2rem',
+    },
+    extend: {
+      negativeMargin: spacing,
+      margin: spacing,
+      padding: spacing,
+      width: {
+        row: 'calc(100% + 1.5rem)',
+        'row-tight': 'calc(100% + 0.5rem)',
+      },
+      maxWidth: spacing,
+      minWidth: spacing,
+      maxHeight: spacing,
+      minHeight: spacing,
     },
   },
   variants: {},
