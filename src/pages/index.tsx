@@ -80,7 +80,7 @@ const IndexPage = () => {
             }}
           >
             <span className="font-thin uppercase text-white opacity-50">Web-Koncept</span>
-            <span className="text-4xl font-semibold uppercase text-white">København</span>
+            <span className="text-4xl text-white font-semibold uppercase tracking-widest">Aalborg</span>
             <Link to="/" className="mt-4 px-5 py-2 border-2 border-white text-sm text-white font-light hover:bg-white hover:text-gray-900">Gå til afdeling</Link>
           </div>
         </BackgroundImage>
@@ -96,7 +96,7 @@ const IndexPage = () => {
             }}
           >
             <span className="font-thin uppercase text-white opacity-50">Web-Koncept</span>
-            <span className="text-4xl font-semibold uppercase text-white">København</span>
+            <span className="text-4xl text-white font-semibold uppercase tracking-widest">København</span>
             <Link to="/" className="mt-4 px-5 py-2 border-2 border-white text-sm text-white font-light hover:bg-white hover:text-gray-900">Gå til afdeling</Link>
           </div>
         </BackgroundImage>
@@ -112,7 +112,7 @@ const IndexPage = () => {
             }}
           >
             <span className="font-thin uppercase text-white opacity-50">Web-Koncept</span>
-            <span className="text-4xl font-semibold uppercase text-white">København</span>
+            <span className="text-4xl text-white font-semibold uppercase tracking-widest">Århus</span>
             <Link to="/" className="mt-4 px-5 py-2 border-2 border-white text-sm text-white font-light hover:bg-white hover:text-gray-900">Gå til afdeling</Link>
           </div>
         </BackgroundImage>
