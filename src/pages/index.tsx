@@ -38,19 +38,33 @@ const IndexPage = () => {
     }
   `)
 
-  console.log({ images })
-
   return (
     <Layout>
       <SEO title="Home" />
-      <section>
-        <div className="container p-4">
-          <h4 className="my-4 text-xl text-gray-500">Ny hjemmeside?</h4>
-          <h1 className="text-3xl leading-none font-bold text-gray-900">Webbureau i Århus, Aalborg og København</h1>
-          <h4 className="my-4 text-lg font-semibold text-gray-900">Web-Koncept A/S er et webbureau med fokus på at levere responsive hjemmesider til små og mellemstore virksomheder i hele Danmark</h4>
-          <p className="leading-relaxed text-lg text-gray-700">Vores målsætning er at levere en hjemmesideløsning med en brugervenlig overflade, som prismæssigt passer til dine behov. Det er vigtigt for os, at du kun betaler for det, du har brug for. Derfor tilbyder vi flere forskellige services, såsom logodesign, e-mail, søgemaskineoptimering, annoncering m.m., som du selv kan vælge ud fra og sammensætte, som du har lyst.</p>
-          <h4 className="my-4 text-lg font-semibold text-gray-900">Ny hjemmeside i WordPress</h4>
-          <p className="leading-relaxed text-lg text-gray-700">Vi udarbejder din hjemmeside i WordPress, som er det mest brugte CMS-system i verden, og eftersom det er et OpenSource-system i konstant udvikling, er du altid sikret en hjemmeside, der følger med tiden. Vores dygtige grafikere sørger for at udvikle et professionelt og unikt design, der afspejler din virksomhedsprofil, og som henvender sig til din specifikke målgruppe. Hver enkelt hjemmeside bliver designet og udviklet ud fra dine ønsker og præferencer.</p>
+      <section className="relative bg-gray-200">
+        <div className="absolute text-white font-bold opacity-50" style={{
+          left: '-7.5rem',
+          bottom: '-12.5rem',
+          fontSize: '22.5rem',
+          whiteSpace: 'nowrap',
+        }}>Web-Koncept</div>
+        <div className="z-10 relative container">
+          <div className="py-8 column md:row">
+            <div className="w-full md:w-1/2 col">
+              <div className="h-full column justify-end">
+                <div className="col">
+                  <h4 className="my-4 text-xl text-gray-500">Ny hjemmeside?</h4>
+                  <h1 className="text-3xl md:text-5xl md:tracking-wider leading-tight font-bold text-gray-900">Webbureau i <span style={{ color: '#779578' }}>Århus, Aalborg og København</span></h1>
+                </div>
+              </div>
+            </div>
+            <div className="col w-full md:w-1/2">
+              <h4 className="my-4 text-lg font-semibold text-gray-900">Web-Koncept A/S er et webbureau med fokus på at levere responsive hjemmesider til små og mellemstore virksomheder i hele Danmark</h4>
+              <p className="leading-relaxed text-lg text-gray-700">Vores målsætning er at levere en hjemmesideløsning med en brugervenlig overflade, som prismæssigt passer til dine behov. Det er vigtigt for os, at du kun betaler for det, du har brug for. Derfor tilbyder vi flere forskellige services, såsom logodesign, e-mail, søgemaskineoptimering, annoncering m.m., som du selv kan vælge ud fra og sammensætte, som du har lyst.</p>
+              <h4 className="my-4 text-lg font-semibold text-gray-900">Ny hjemmeside i WordPress</h4>
+              <p className="leading-relaxed text-lg text-gray-700">Vi udarbejder din hjemmeside i WordPress, som er det mest brugte CMS-system i verden, og eftersom det er et OpenSource-system i konstant udvikling, er du altid sikret en hjemmeside, der følger med tiden. Vores dygtige grafikere sørger for at udvikle et professionelt og unikt design, der afspejler din virksomhedsprofil, og som henvender sig til din specifikke målgruppe. Hver enkelt hjemmeside bliver designet og udviklet ud fra dine ønsker og præferencer.</p>
+            </div>
+          </div>
         </div>
       </section>
       <section className="flex flex-wrap">
@@ -103,42 +117,50 @@ const IndexPage = () => {
           </div>
         </BackgroundImage>
       </section>
-      <section className="p-8">
-        <h3 className="my-4 text-3xl text-gray-900 font-bold">
-          <GoogleIcon />
-          {' '}
-          partner
-        </h3>
-        <p className="my-4 leading-relaxed text-lg text-gray-700">Hos Web-Koncept er vi stolte af at kunne kalde os for Google Partner. Det betyder, at vores medarbejdere er certificerede Google Ads-specialister og kan producere målrettede kampagner og effektive annoncer for din virksomhed.</p>
-        <p className="my-4 leading-relaxed text-lg text-gray-700">Med vores ekspertise og erfaring inden for online annoncering kan du nemt og hurtigt komme i gang med at tiltrække nye kunder gennem Google Ads.</p>
-        <GooglePartner className="w-64" />
-        <Accordion className="accordion my-4 border-none" allowZeroExpanded>
-          <AccordionItem className="accordion__item my-8">
-            <AccordionItemHeading className="accordion__heading">
-              <AccordionItemButton className="accordion__button bg-white hover:bg-white border border-gray-300">Is free will real or just an illusion?</AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel className="accordion__panel border">
-              <p>
-                In ad velit in ex nostrud dolore cupidatat consectetur
-                ea in ut nostrud velit in irure cillum tempor laboris
-                sed adipisicing eu esse duis nulla non.
-              </p>
-            </AccordionItemPanel>
-          </AccordionItem>
-          <AccordionItem className="accordion__item my-8">
-            <AccordionItemHeading className="accordion__heading">
-              <AccordionItemButton className="accordion__button bg-white hover:bg-white border border-gray-300">What harsh truths do you prefer to ignore?</AccordionItemButton>
-            </AccordionItemHeading>
-            <AccordionItemPanel className="accordion__panel border">
-              <p>
-                Exercitation in fugiat est ut ad ea cupidatat ut in
-                cupidatat occaecat ut occaecat consequat est minim minim
-                esse tempor laborum consequat esse adipisicing eu
-                reprehenderit enim.
-              </p>
-            </AccordionItemPanel>
-          </AccordionItem>
-        </Accordion>
+      <section className="relative p-8">
+        <div className="absolute text-gray-200 font-bold opacity-50" style={{
+          left: '-7.5rem',
+          bottom: '-12.5rem',
+          fontSize: '22.5rem',
+          whiteSpace: 'nowrap',
+        }}>Google Partner</div>
+        <div className="z-10 relative container">
+          <h3 className="my-4 text-3xl text-gray-900 font-bold">
+            <GoogleIcon />
+            {' '}
+            partner
+          </h3>
+          <p className="my-4 leading-relaxed text-lg text-gray-700">Hos Web-Koncept er vi stolte af at kunne kalde os for Google Partner. Det betyder, at vores medarbejdere er certificerede Google Ads-specialister og kan producere målrettede kampagner og effektive annoncer for din virksomhed.</p>
+          <p className="my-4 leading-relaxed text-lg text-gray-700">Med vores ekspertise og erfaring inden for online annoncering kan du nemt og hurtigt komme i gang med at tiltrække nye kunder gennem Google Ads.</p>
+          <GooglePartner className="w-64" />
+          <Accordion className="accordion my-4 border-none" allowZeroExpanded>
+            <AccordionItem className="accordion__item my-8">
+              <AccordionItemHeading className="accordion__heading">
+                <AccordionItemButton className="accordion__button bg-white hover:bg-white border border-gray-300">Is free will real or just an illusion?</AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel className="accordion__panel border">
+                <p>
+                  In ad velit in ex nostrud dolore cupidatat consectetur
+                  ea in ut nostrud velit in irure cillum tempor laboris
+                  sed adipisicing eu esse duis nulla non.
+                </p>
+              </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem className="accordion__item my-8">
+              <AccordionItemHeading className="accordion__heading">
+                <AccordionItemButton className="accordion__button bg-white hover:bg-white border border-gray-300">What harsh truths do you prefer to ignore?</AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel className="accordion__panel border">
+                <p>
+                  Exercitation in fugiat est ut ad ea cupidatat ut in
+                  cupidatat occaecat ut occaecat consequat est minim minim
+                  esse tempor laborum consequat esse adipisicing eu
+                  reprehenderit enim.
+                </p>
+              </AccordionItemPanel>
+            </AccordionItem>
+          </Accordion>
+        </div>
       </section>
       <BackgroundImage
         Tag="section"
