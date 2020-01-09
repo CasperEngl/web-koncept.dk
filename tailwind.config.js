@@ -1,4 +1,5 @@
 const spacing = {
+  none: 'none',
   1: '0.25rem',
   '-1': '-0.25rem',
   2: '0.5rem',
@@ -96,6 +97,8 @@ module.exports = {
       width: {
         row: 'calc(100% + 1.5rem)',
         'row-tight': 'calc(100% + 0.5rem)',
+        column: 'calc(100% + 1.5rem)',
+        'column-tight': 'calc(100% + 0.5rem)',
       },
       maxWidth: spacing,
       minWidth: spacing,
@@ -104,5 +107,7 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('tailwindcss-transitions')()
+  ],
 }

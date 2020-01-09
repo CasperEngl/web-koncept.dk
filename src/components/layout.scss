@@ -23,19 +23,31 @@ html {
 
 @responsive {
   .row {
-    @apply -mx-3 w-row flex flex-wrap;
+    @apply -mx-3 w-row flex flex-row flex-wrap;
   }
 
-  .row .col {
-    @apply px-3;
+  .column {
+    @apply -mx-3 w-column flex flex-col flex-wrap;
+  }
+
+  .row, .column {
+    .col {
+      @apply px-3;
+    }
   }
 
   .row-tight {
     @apply -mx-1 w-row-tight flex flex-wrap;
   }
 
-  .row-tight .col {
-    @apply px-1;
+  .column-tight {
+    @apply -mx-1 w-column-tight flex flex-col flex-wrap;
+  }
+
+  .row-tight, .column-tight {
+    .col {
+      @apply px-1;
+    }
   }
 }
 
