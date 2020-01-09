@@ -16,14 +16,14 @@ module.exports = {
         ],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-purgecss`,
-    //   options: {
-    //     printRejected: true,
-    //     develop: true, // Enable while using `gatsby develop`
-    //     tailwind: true,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        develop: process.env.NODE_ENV === 'production', // Enable while using `gatsby develop`
+        tailwind: true,
+      },
+    },
     {
       resolve: 'gatsby-background-image-es5',
       options: {
