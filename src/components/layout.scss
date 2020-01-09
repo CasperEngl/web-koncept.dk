@@ -1,0 +1,24 @@
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-types: (slider);
+$hamburger-layer-color: currentColor;
+$hamburger-layer-border-radius: 2px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-width: 36px;
+$hamburger-layer-spacing: 8px;
+
+$hamburger-hover-opacity: 1;
+$hamburger-active-layer-color: $hamburger-layer-color;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity;
+
+@import '~hamburgers/_sass/hamburgers/hamburgers.scss';
+@import '~react-accessible-accordion/dist/fancy-example.css';
+
+html {
+  hyphens: auto;
+}
+
+@import '~tailwindcss/utilities';
