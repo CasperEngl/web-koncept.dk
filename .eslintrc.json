@@ -38,7 +38,8 @@
                     ".tsx"
                 ]
             }
-        ]
+        ],
+        "comma-dangle": [2, "always"]
     },
     "settings": {
         "import/resolver": {
