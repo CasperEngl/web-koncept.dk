@@ -54,9 +54,9 @@ export default () => (
         <article className="col w-full sm:w-1/2 md:w-1/4">
           <h3 className="my-4 text-3xl text-gray-800 font-semibold">Skriv til os</h3>
           <form>
-            <input type="text" placeholder="Navn" className="my-2 p-4 w-full h-12 border-2" />
-            <input type="email" placeholder="Email" className="my-2 p-4 w-full h-12 border-2" />
-            <textarea placeholder="Din besked" className="my-2 p-4 w-full h-40 border-2 resize-none" />
+            <input type="text" placeholder="Navn" className="my-2 p-4 w-full h-12 border-2 appearance-none" />
+            <input type="email" placeholder="Email" className="my-2 p-4 w-full h-12 border-2 appearance-none" />
+            <textarea placeholder="Din besked" className="my-2 p-4 w-full h-40 border-2 resize-none appearance-none" />
             <button type="submit" className="px-4 py-3 border-2 hover:border-gray-900 hover:bg-gray-900 hover:text-white">Send besked</button>
           </form>
         </article>
@@ -70,7 +70,7 @@ export default () => (
             <Link to="/" className="my-1">Kontakt</Link>
           </nav>
           <form>
-            <input type="search" placeholder="Søg" className="my-4 p-4 w-full h-12 border-2" />
+            <input type="search" placeholder="Søg" className="my-4 p-4 w-full h-12 border-2 appearance-none" />
           </form>
         </article>
       </div>
@@ -79,7 +79,7 @@ export default () => (
       <div className="container py-4 max-w-none">
         <div className="row justify-between items-center">
           <div className="col text-gray-500">
-            &copy; {new Date().getFullYear()} - Web-Koncept A/S
+            &copy; {new Date().getFullYear()} &mdash; Web-Koncept A/S
           </div>
           <div className="col text-gray-500 hidden md:block">
             <nav className="row">
