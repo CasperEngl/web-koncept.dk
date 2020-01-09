@@ -49,7 +49,7 @@ const IndexPage = () => {
           whiteSpace: 'nowrap',
         }}>Web-Koncept</div>
         <div className="z-10 relative container">
-          <div className="py-8 column md:row">
+          <div className="py-8 md:py-16 column md:row">
             <div className="w-full md:w-1/2 col">
               <div className="h-full column justify-end">
                 <div className="col">
