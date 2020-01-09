@@ -19,20 +19,17 @@ export default () => (
           </div>
           <address className="my-4 not-italic">
             <strong className="block">København</strong>
-            Sauntesvej 13,
-          <br />
+            Sauntesvej 13,<br />
             2820 Gentofte
-        </address>
+          </address>
           <address className="my-4 not-italic">
             <strong className="block">Aalborg</strong>
-            Bejlerholm 12,
-          <br />
+            Bejlerholm 12,<br />
             9400 Nørresundby
-        </address>
+          </address>
           <address className="my-4 not-italic">
             <strong className="block">Århus</strong>
-            Gunnar Clausens Vej 26 B,
-          <br />
+            Gunnar Clausens Vej 26 B,<br />
             8260 Viby J
         </address>
         </article>
