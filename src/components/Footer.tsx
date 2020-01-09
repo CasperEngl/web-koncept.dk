@@ -81,7 +81,7 @@ export default () => (
           <div className="col text-gray-500">
             &copy; {new Date().getFullYear()} - Web-Koncept A/S
           </div>
-          <div className="col text-gray-500">
+          <div className="col text-gray-500 hidden md:block">
             <nav className="row">
               <Link to="/" className="py-2 col border-r">Google Ads</Link>
               <Link to="/" className="py-2 col border-r">Facebook</Link>
