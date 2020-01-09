@@ -20,9 +20,31 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "plugin:typescript/import"
     ],
     "rules": {
-        "semi": [2, "never"]
+        "semi": [2, "never"],
+        "quotes": [
+            2,
+            "single",
+            "avoid-escape"
+        ],
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".jsx",
+                    ".tsx"
+                ]
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
     }
 }
