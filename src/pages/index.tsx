@@ -42,7 +42,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <section className="relative bg-gray-200">
-        <div className="absolute text-white font-bold opacity-50" style={{
+        <div className="absolute hidden md:block text-white font-bold opacity-50" style={{
           left: '-7.5rem',
           bottom: '-12.5rem',
           fontSize: '22.5rem',
@@ -118,7 +118,7 @@ const IndexPage = () => {
         </BackgroundImage>
       </section>
       <section className="relative p-8">
-        <div className="absolute text-gray-200 font-bold opacity-50" style={{
+        <div className="absolute hidden md:block text-gray-200 font-bold opacity-50" style={{
           left: '-7.5rem',
           bottom: '-12.5rem',
           fontSize: '22.5rem',
