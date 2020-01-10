@@ -21,10 +21,6 @@ html {
   hyphens: auto;
 }
 
-body {
-  @apply overflow-x-hidden;
-}
-
 @responsive {
   .row {
     @apply -mx-3 w-row flex flex-row flex-wrap;
